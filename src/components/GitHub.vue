@@ -1,6 +1,6 @@
 <template>
    <div class="container mx-auto">
-        <input type="text" id="nombre" class="form-control" @keyup.enter = "obtenerUsuario">
+        <input type="text" id="nombre" class="form-control" @keydown.enter = "obtenerUsuario">
 
         <div class="alert alert-danger mt-5" v-if="advertencia">
         El usuario no existe
